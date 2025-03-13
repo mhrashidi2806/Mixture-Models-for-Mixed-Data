@@ -8,11 +8,13 @@ Mixture Model for Mixed Data: Handles both continuous (ECG waveforms) and catego
 
 ### Re-parameterization Techniques: 
 #### Ensures model parameters remain within valid ranges using appropriate transformations:
+
 Softmax for mixture weights (πz)
 
 Softplus for standard deviations (σdz)
 
 Sigmoid for Bernoulli parameters (φdz)
+
 
 Mini-Batch Training: Uses stochastic optimization to minimize the negative log marginal likelihood efficiently.
 PyTorch Automatic Differentiation: Enables efficient gradient-based optimization.
